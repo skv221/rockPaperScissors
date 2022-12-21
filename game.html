@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="styles.css">
+    <title>Play Stone, Paper, Scissors</title>
+</head>
+<body>
+    <script src="index.js"></script>
+    <div id="container">
+        <h1 id="title">Rock, Paper and Scissors</h1>
+        <div id="scorecard" class="flexrow">
+            <div class="flexcolumn">
+                <img src="images/user.jpg" class="image">
+                <h3 id="player-name">Player</h3>
+                <h3 id="player-score" style="margin-top: -10px;">0</h3>
+            </div>
+            <h1>Vs</h1>
+            <div class="flexcolumn">
+                <img src="images/bot.png" class="image">
+                <h3>CPU</h3>
+                <h3 id="cpu-score" style="margin-top: -10px;">0</h3>
+            </div>
+        </div>
+        <div class="flexcolumn show" id="playground">
+            <h1>Choose one...</h1>
+            <div class="flexrow" style="flex-wrap: wrap;">
+                <img src="images/rock.webp" onclick="select('rock')" class="image-1">
+                <img src="images/paper.webp" onclick="select('paper')" class="image-1">
+                <img src="images/scissors.webp" onclick="select('scissors')" class="image-1">
+            </div>
+        </div>
+        <button class="btn1">Start new game Game</button>
+        <div id="snackbar"></div>
+    </div>
+</body>
+</html>

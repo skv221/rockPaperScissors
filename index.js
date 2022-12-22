@@ -83,7 +83,7 @@ function cpuWin(cpuPick, userPick) {
     cpuPoint += 1;
     document.getElementById("cpu-score").textContent = cpuPoint
     var x = document.getElementById("snackbar")
-    x.textContent = "CPU Picked "+ cpuPick +".CPU Won!"
+    x.textContent = "CPU Picked "+ cpuPick +". CPU Won!"
     x.style.backgroundColor = "#9b2226"
     x.className = "show"
     var y = document.getElementById("playground")

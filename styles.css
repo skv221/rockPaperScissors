@@ -94,17 +94,18 @@ body {
 
 #snackbar {
     visibility: hidden; 
+    display: block;
     min-width: 250px;
-    margin-left: -125px; 
+    margin-left: 0 auto; 
     background-color: #333; 
     color: #fff; 
     text-align: center; 
     border-radius: 2px; 
     padding: 16px; 
     position: fixed; 
-    z-index: 1; 
-    left: 50%; 
-    bottom: 30px; 
+    z-index: 1;  
+    bottom: 200px;
+    font-size: 30px;
   }
   
   
@@ -113,10 +114,14 @@ body {
     animation: fadein 0.5s, fadeout 0.5s 2.5s;
   }
 
-  #playground.show {
+#playground {
+    visibility: hidden;
+}
+
+#playground.show {
     visibility: visible; 
-    animation: fadein 0.5s, fadeout 0.5s 2.5s;
-  }
+    animation: fadein 0.5s;
+}
 
 ::placeholder {
     color: rgb(192, 192, 192);
@@ -130,10 +135,10 @@ body {
 
 @keyframes fadein {
     from {bottom: 0; opacity: 0;}
-    to {bottom: 30px; opacity: 1;}
+    to {bottom: 200px; opacity: 1;}
 }
 
 @keyframes fadeout {
-    from {bottom: 30px; opacity: 1;}
+    from {bottom: 200px; opacity: 1;}
     to { bottom: 0; opacity: 0;}
 }

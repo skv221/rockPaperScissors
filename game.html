@@ -15,13 +15,13 @@
             <div class="flexcolumn">
                 <img src="images/user.jpg" class="image">
                 <h3 id="player-name">Player</h3>
-                <h3 id="player-score" style="margin-top: -10px;">0</h3>
+                <h1 id="player-score" style="margin-top: -10px;">0</h1>
             </div>
             <h1>Vs</h1>
             <div class="flexcolumn">
                 <img src="images/bot.png" class="image">
                 <h3>CPU</h3>
-                <h3 id="cpu-score" style="margin-top: -10px;">0</h3>
+                <h1 id="cpu-score" style="margin-top: -10px;">0</h1>
             </div>
         </div>
         <div class="flexcolumn show" id="playground">
@@ -31,8 +31,8 @@
                 <img src="images/paper.webp" onclick="select('paper')" class="image-1">
                 <img src="images/scissors.webp" onclick="select('scissors')" class="image-1">
             </div>
+            <button class="btn1" onclick="resetGame()">Start new game Game</button>
         </div>
-        <button class="btn1">Start new game Game</button>
         <div id="snackbar"></div>
     </div>
 </body>

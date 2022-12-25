@@ -95,7 +95,11 @@ body {
 }
 
 .image-1:hover {
-    transform: scale(1.2);
+    animation: scaleup 1s 1;
+}
+
+.image-1:active {
+    transform: scale(0.9);
 }
 
 #snackbar {
@@ -148,4 +152,13 @@ body {
 @keyframes fadeout {
     from {bottom: 200px; opacity: 1;}
     to { bottom: 0; opacity: 0;}
+}
+
+@keyframes scaleup {
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
